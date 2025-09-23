@@ -38,7 +38,8 @@ body {
 
 .welcome h1 {
   font-size: 50px;
-  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   font-family: 'Lobster', cursive;
   letter-spacing: 4px;
 }
@@ -109,13 +110,18 @@ input:focus {
   text-decoration: none;
 }
 
-/* Button */
-button {
-  margin-top: 280px;
+/* Wrapper link */
+.login-link {
+  display: flex;             /* allows centering */
+  align-content: center;   /* center horizontally */
+  margin-top: 280px;          /* normal gap above */
+  text-decoration: none;     /* remove underline */
+}
+
+/* Button itself */
+.login-link button {
   padding: 8px 18px;
-  width: fit-content;       /* button shrinks to fit text */
-  align-self: center;       /* keeps it centered in form */
-  border: 1px solid #aaa;
+  border: 2px solid #aaa;
   border-radius: 5px;
   background: transparent;
   color: #fff;
@@ -123,7 +129,7 @@ button {
   transition: background 0.3s ease;
 }
 
-button:hover {
+.login-link button:hover {
   background: #333;
 }
 
