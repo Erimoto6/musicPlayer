@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Lobster';
+  src: url('font/Lobster/Lobster-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('font/Archivo/Archivo-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1b1125;
+  color: #fff;
+  font-family: 'Archivo';
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 5%; /* use relative padding instead of fixed 50px */
+  box-sizing: border-box; /* padding counted inside width */  
+}
+
+/* Left welcome box */
+.welcome {
+  width: 64%;
+}
+
+.welcome h1 {
+  font-size: 50px;
+  margin-bottom: 0px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 4px;
+}
+
+.welcome p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.preview-box {
+  border: 2px solid #aaa;
+  border-radius: 8px;
+  width: 100%;
+  height: 400px;
+}
+
+/* Right login box */
+.login-box {
+  width: 26%;
+  padding: 20px;
+  border: 2px solid #aaa;
+  border-radius: 8px;
+  height: 570px;
+}
+
+.login-box h2 {
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+  margin-top: 0px;
+  margin-bottom: 23px;
+  letter-spacing: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;  /* small space under label */
+  font-family: 'Courier New', monospace;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  background: #1b1125;
+  color: #fff;
+  margin-bottom: 15px; /* spacing between inputs */
+}
+
+input:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+/* Forgot password link */
+.forgot {
+  font-size: 12px;
+  margin-top: 0px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+/* Button */
+button {
+  margin-top: 280px;
+  padding: 8px 18px;
+  width: fit-content;       /* button shrinks to fit text */
+  align-self: center;       /* keeps it centered in form */
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #333;
+}
+
