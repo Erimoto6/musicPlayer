@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Lobster';
-  src: url('font/Lobster/Lobster-Regular.ttf') format('truetype');
+  src: url('start/css/font/Lobster/Lobster-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Archivo';
-  src: url('font/Archivo/Archivo-VariableFont_wdth\,wght.ttf') format('truetype');
+  src: url('start/css/font/Archivo/Archivo-VariableFont_wdth\,wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -49,6 +49,7 @@ body {
   line-height: 1.6;
   margin-top: 0px;
   margin-bottom: 30px;
+  font-family: 'Archivo';
 }
 
 .preview-box {
@@ -84,7 +85,7 @@ form {
 label {
   margin-top: 10px;
   margin-bottom: 5px;  /* small space under label */
-  font-family: 'Courier New', monospace;
+  font-family: 'Archivo';
 }
 
 /* Inputs */
@@ -110,16 +111,18 @@ input:focus {
   text-decoration: none;
 }
 
-/* Wrapper link */
+/* make the link wrapper a full-width block and center its contents */
 .login-link {
-  display: flex;             /* allows centering */
-  align-content: center;   /* center horizontally */
-  margin-top: 280px;          /* normal gap above */
-  text-decoration: none;     /* remove underline */
+  display: block;        /* makes it full-width */
+  width: 100%;           /* span the login box */
+  text-align: center;    /* center the inline/inline-block children */
+  margin-top: 280px;      /* adjust gap above button */
+  text-decoration: none;
 }
 
-/* Button itself */
+/* style the actual button; inline-block will be centered by text-align */
 .login-link button {
+  display: inline-block;
   padding: 8px 18px;
   border: 2px solid #aaa;
   border-radius: 5px;
@@ -127,9 +130,9 @@ input:focus {
   color: #fff;
   cursor: pointer;
   transition: background 0.3s ease;
+  margin: 0;             /* ensure no leftover margins */
 }
 
 .login-link button:hover {
   background: #333;
 }
-

@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Library - Homepage</title>
+  <link rel="stylesheet" href="css/homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <h1>horhorhorhor</h1>
+  <div class="container">
+
+    <!-- Top Navbar -->
+    <div class="navbar">
+      <button class="home-btn"><i class="fa-solid fa-house"></i></button>
+      
+      <div class="nav-center">
+        <div class="search-container">
+          <i class="fa-solid fa-search"></i>
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+
+      <div class="circle-btn"></div>
+    </div>
+
+    <!-- Library Section -->
+    <div class="library-header">
+      <h2>Library</h2>
+      <button class="new-folder-btn"><i class="fa-solid fa-folder-plus"></i> New Folder</button>
+    </div>
+
+    <div class="library">
+      <div class="folder">
+        <div class="folder-box"><i class="fa-solid fa-music"></i></div>
+        <p>All Songs</p>
+      </div>
+      <div class="folder">
+        <div class="folder-box"><i class="fa-solid fa-heart"></i></div>
+        <p>Favorites</p>
+      </div>
+      <div class="folder">
+        <div class="folder-box"><i class="fa-solid fa-music"></i></div>
+        <p>Rock</p>
+      </div>
+      <div class="folder">
+        <div class="folder-box"><i class="fa-solid fa-music"></i></div>
+        <p>Chill</p>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
